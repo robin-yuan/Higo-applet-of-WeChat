@@ -1,0 +1,15 @@
+<!--pages/lists/lists.wxml-->
+ <image class="homepage" src="{{img}}"></image>
+<view class="homebutton">
+    <navigator url="../products/products">
+         <button type="primary">产品介绍</button>
+    </navigator>
+   
+    <navigator url="../team/team">
+         <button type="primary">团队介绍</button>
+    </navigator>
+</view>
+<!--<view class="text">
+    <view class="adrs">地址：{{address}}</view>
+    <view class="eml">邮箱：{{email}}</view>
+</view>-->

@@ -1,0 +1,22 @@
+.homepage{
+    display: block;
+    width: 220px;height: 220px;
+    margin:20% auto 0px;
+}
+.homebutton{
+    position: absolute;
+    width: 100%;
+    margin-top:10%;
+}
+.homebutton button{
+    width: 60%;
+    margin-top: 5%;
+}
+/*.text{
+    margin-top: 40px;
+}
+.adrs,.eml{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}*/

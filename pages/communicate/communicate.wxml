@@ -1,0 +1,44 @@
+
+<!--<view class="postal">
+    <button bindtap="connect">连接到higo机器人</button>
+</view>-->
+
+<!--<view class="tip">{{tip}}</view>-->
+
+<view class="backimage">
+  <image src="../../images/bgimg.png" style="position:absolute;width:100%;height:100%;"></image>
+</view>
+
+<view class="connect">
+    <button type="primary" bindtap="showModal">点击我连接到higo机器人</button>
+</view>
+<view>
+  <modal title="连接到higo机器人" hidden="{{modalHidden}}" confirm-text="连接" cancel-text="取消"
+  bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">是否连接到"ws://192.168.3.79:9000"</modal>
+</view>
+
+<view id="rob"style="position:absolute;top:{{y}}px;left:{{x}}px;">
+    <image src="../../images/robot1.png"  style="width:40px;height:40px"></image>
+</view>
+
+<!--<view class="controlbutton">
+<button class="mr" bindtap="moveup">前进</button>
+<button class="mr" bindtap="movedown">后退</button>
+<button class="mr"bindtap="moveleft">左转</button>
+<button class="mr" bindtap="moveright">右转</button>
+</view>-->
+
+<!--<view class="record" style="position:absolute;left:37%;top:75%;">
+<image src="../../images/voi.png" style="width:100px;height:100px;" ></image>
+</view>-->
+
+<view  wx:if="{{isSpeaking}}"  class="speak-style">
+<image class="sound-style" src="../../images/voice_icon_speech_sound_1.png" ></image>
+<image wx:if="{{j==2}}" class="sound-style" src="../../images/voice_icon_speech_sound_2.png" ></image>
+<image wx:if="{{j==3}}" class="sound-style" src="../../images/voice_icon_speech_sound_3.png" ></image>
+<image wx:if="{{j==4}}" class="sound-style" src="../../images/voice_icon_speech_sound_4.png" ></image>
+<image wx:if="{{j==5}}"class="sound-style" src="../../images/voice_icon_speech_sound_5.png" ></image>
+ </view>
+ <view class="record-style">
+ <button type="primary" class="btn-style" bindtouchstart="touchdown" bindtouchend="touchup">按住发送语音</button>
+ </view>

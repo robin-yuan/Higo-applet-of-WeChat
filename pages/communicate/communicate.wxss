@@ -1,0 +1,33 @@
+/*连接到服务器*/
+.connect{
+    position: absolute;
+    width: 80%;
+    margin: 5% 10%;  
+}
+
+.speak-style{
+    position: fixed;
+    height: 200rpx;
+    width: 200rpx;
+    border-radius: 20rpx;
+    bottom: 200rpx;
+    margin-left: 37%;
+    background:#1bac1b;
+}
+/*按钮位置设置*/
+.record-style{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 120rpx;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.sound-style{
+  position: fixed;
+  width: 100rpx;
+  height:150rpx;
+  margin-top: 23rpx;
+  margin-left: 49rpx;
+}
